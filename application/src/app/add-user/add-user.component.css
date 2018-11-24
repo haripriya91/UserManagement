@@ -1,0 +1,10 @@
+.add-update-btn {
+  float: left;
+}
+.reste-btn {
+  float: right;
+}
+.btn-grp {
+  display: inline-block;
+  width: 100%;
+}

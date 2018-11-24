@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+
+
+<div class="container">
+  <h2 class="app-heading">{{title}}</h2>
+  <div class="row">
+    <div class="col-md-7">
+      <app-user-list [userInfo]="userInfo" [reset]="reset" [userList]="userList"></app-user-list>
+    </div>
+    <div class="col-md-5">
+      <app-add-user [userInfo]="userInfo" [reset]="reset" [userList]="userList"></app-add-user>
+    </div>
+  </div>
+</div>

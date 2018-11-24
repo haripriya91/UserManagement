@@ -1,0 +1,24 @@
+<h3>List of Users</h3>
+<hr>
+<div>
+  <ul>
+    <li class="list-group-item list-group-head">
+      <div class="row ">
+        <div class="pull-left col-md-6">Name</div>
+        <div class="pull-left col-md-2">Gender</div>
+        <div class="pull-left col-md-2">Country</div>
+        <div class="pull-right  col-md-2"> Action</div>
+      </div>
+    </li>
+    <li *ngFor="let user of usersList" class="list-group-item" (click)="userSelected(user)" [class.active]="isSelected(user) && isReset">
+      <div class="row">
+        <div class="pull-left col-md-6">{{ user.name}}</div>
+        <div class="pull-left col-md-2">{{ user.gender}}</div>
+        <div class="pull-left col-md-2">{{ user.country}}</div>
+        <div class="deleteUsers pull-right  col-md-2" (click)="deleteUser(user._id)">X</div>
+      </div>
+
+
+    </li>
+  </ul>
+</div>
